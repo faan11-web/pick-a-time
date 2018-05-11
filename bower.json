@@ -1,0 +1,18 @@
+{
+  "name": "pick-a-time",
+  "main": "pick-a-time.html",
+  "dependencies": {
+      "polymer": "Polymer/polymer#^2.0.0",
+      "jQuery": "^3.3.1",
+      "pickadate": "^3.5.6",
+      "paper-button": "PolymerElements/paper-button#^2.1.1"
+    },
+    "devDependencies": {
+      "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+      "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+      "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+    },
+    "resolutions": {
+      "polymer": "^2.0.0"
+    }
+}
