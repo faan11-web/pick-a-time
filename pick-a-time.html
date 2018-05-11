@@ -1,4 +1,7 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<script src="../jQuery/dist/jquery.min.js"></script>
+<script src="../pickadate/lib/compressed/picker.js"></script>
+<script src="../pickadate/lib/compressed/picker.time.js"></script>
 
 <dom-module id="pick-a-time">
   <template>
@@ -112,7 +115,7 @@
         return [
           '_changeOpened(opened)',
           // Observer method name, followed by a list of dependencies, in parenthesis
-          'pickADate(monthsFull,monthsShort,weekdaysFull,weekdaysShort,showMonthsShort,showWeekdaysFull,todayButton,clearButton,closeButton,labelMonthNext,labelMonthPrev,labelMonthSelect,labelYearSelect,format,formatSubmit,hiddenPrefix,hiddenSuffix,hiddenName,editable,selectYears,selectMonths,firstDay,min,max,disable,closeOnSelect,closeOnClear)'
+          'pickADate(clearButton,format,formatSubmit,hiddenPrefix,hiddenSuffix,hiddenName,editable,min,max,disable,closeOnSelect,closeOnClear)'
         ]
       }
       _changeOpened(opened){
@@ -158,9 +161,9 @@
              let value = me.picker.pickatime('picker').get();
 
              if (value===""){
-               me.date = undefined;
+               me.time = undefined;
              }else{
-               me.date = value;
+               me.time = value;
              }
              //console.log(me.date);
            }

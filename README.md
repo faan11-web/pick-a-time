@@ -1,5 +1,12 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/faan11/pick-a-time)
+
+
 # \<pick-a-time\>
 
+![alt text](images/hours.png)
+
+Whenever you need to open this calendar relaying on the click event, you have to use the following methods:
+ event.preventDefault(); event.stopPropagation()
 
 
 ## Install the Polymer-CLI

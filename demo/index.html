@@ -10,6 +10,8 @@
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../paper-button/paper-button.html">
+
     <link rel="import" href="../pick-a-time.html">
 
     <custom-style>
@@ -22,7 +24,8 @@
       <h3>Basic pick-a-time demo</h3>
       <demo-snippet>
         <template>
-          <pick-a-time></pick-a-time>
+          <paper-button onClick="document.getElementById('time').opened = true; event.preventDefault(); event.stopPropagation()"> Hello!</paper-button>
+          <pick-a-time id="time"></pick-a-time>
         </template>
       </demo-snippet>
     </div>
